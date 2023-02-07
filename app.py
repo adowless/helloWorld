@@ -1,9 +1,9 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/hello')
 def hello_world():  # put application's code here
     return 'Hello World from Alyssa Dowless! I am adding my first code change'
 
